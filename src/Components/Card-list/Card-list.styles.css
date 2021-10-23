@@ -1,0 +1,82 @@
+.card-list {
+    width: 65vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+
+}
+
+.imgclass {
+    width: 150px;
+    height: 150px;
+    margin: 1em auto auto;
+    padding: 3px;
+
+}
+.searchStylesbox {
+    margin: 10px auto;
+    padding: 4px;
+}
+
+.searchStyles {
+    margin: 0 0 2em;
+    padding: 0;
+    background-color: rgb(191, 193, 197);
+}
+
+
+.boxes {
+    border: 2px solid black;
+    margin: 2px;
+    background-color: rgb(188, 152, 221);
+    box-shadow: 10px 10px 5px #aaaaaa;
+    border-radius: 25px;
+    transition: transform 0.2s;
+
+}
+
+.boxes:hover {
+
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+    box-shadow: none;
+
+
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    padding: 2px;
+
+}
+
+.tooltiptext {
+    width: fit-content;
+    height: 100px;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    /* width: auto; */
+    height: fit-content;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 105%;
+
+
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
